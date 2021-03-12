@@ -34,7 +34,7 @@ int StartupHook(void)
     ecrobot_init_sonar_sensor(NXT_PORT_S3);
     // Init motor on port A & B -> go forward
     ecrobot_set_motor_speed(NXT_PORT_A,speed);
-    ecrobot_set_motor_speed(NXT_PORT_A,speed);
+    ecrobot_set_motor_speed(NXT_PORT_B,speed);
     // Clean LCD
     display_update();
 }

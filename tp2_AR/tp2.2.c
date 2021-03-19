@@ -70,6 +70,7 @@ TASK(distance)
     display_string("\n\rUpdating distance from ultrasound sensor\n\r");
     display_update();
     distance_value = ecrobot_get_sonar_sensor(NXT_PORT_S3);
+    ReleaseResource(mutex);
     TerminateTask();
 }
 
